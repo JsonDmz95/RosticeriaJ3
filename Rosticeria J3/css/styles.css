@@ -24,7 +24,8 @@ body {
       margin: 0;
       padding: 0 0.5rem;
       background: transparent;
-      color: #fff; }
+      color: #fff;
+      margin-left: auto; }
       .encabezado .container .btn-menu:focus {
         outline: 0; }
     .encabezado .container #menu-principal {
@@ -45,3 +46,19 @@ body {
             background: #232323; }
         .encabezado .container #menu-principal ul .active a {
           color: #F44336; }
+
+.texto-encabezado .display-4 {
+  margin-top: 4rem; }
+.texto-encabezado .btn-primary {
+  background-color: #f45c50;
+  border-color: transparent;
+  margin-top: 1rem;
+  transition: all 0.5s ease; }
+  .texto-encabezado .btn-primary:focus {
+    color: #fff;
+    background-color: #F44336;
+    border-color: transparent; }
+  .texto-encabezado .btn-primary:hover {
+    color: #fff;
+    background-color: #F44336;
+    border-color: transparent; }
