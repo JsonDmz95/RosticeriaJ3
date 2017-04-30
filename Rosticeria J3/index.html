@@ -10,35 +10,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
+
     <section class="bienvenidos">
-        <header class="encabezado" role="banner">
-            <a href="index.html">
-                <img src="images/logo-principal.svg" alt="Rosticeria J3 [logo]">
-            </a>
+        <header class="encabezado navbar fixed-top" role="banner">
+            <div class="container">
+                <a href="index.html">
+                    <img src="images/logo-principal.svg" alt="Rosticeria J3 [logo]">
+                </a>
 
-            <button type="button" name="btn-buscar" class="btn-buscar">Buscar</button>
-            <button type="button" name="btn-menu" class="btn-menu">Menu</button>
+                <button type="button" name="btn-buscar" class="btn-buscar">Buscar</button>
+                <button type="button" name="btn-menu" class="btn-menu">Menu</button>
 
-            <form action="#" id="bloque-buscar">
-                <div class="contenedor-bloque-buscar">
-                    <input type="text" placeholder="Buscar...">
-                    <input type="submit" value="Buscar">
-                </div>
-            </form>
+                <form action="#" id="bloque-buscar">
+                    <div class="contenedor-bloque-buscar">
+                        <input type="text" placeholder="Buscar...">
+                        <input type="submit" value="Buscar">
+                    </div>
+                </form>
 
-            <nav id="menu-principal">
-                <ul>
-                    <li class="active"><a href="index.html">Inicio</a></li>
-                    <li><a href="menu.html">Menú</a></li>
-                    <li><a href="llegar.html">¿Cómo llegar?</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <nav id="menu-principal">
+                    <ul>
+                        <li class="active"><a href="index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="llegar.html">¿Cómo llegar?</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
 
+            </div>
         </header>
 
         <div class="texto-encabezado">
@@ -130,6 +134,11 @@
 
     <a href="#" class="irArriba">Ir arriba</a>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
 </body>
 
 </html>
