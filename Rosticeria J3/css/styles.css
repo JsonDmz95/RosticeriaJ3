@@ -1,3 +1,47 @@
+html {
+  font-size: 15px; }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121; }
 
-/*# sourceMappingURL=styles.css.map */
+.encabezado {
+  background: #212121;
+  color: #fff;
+  padding: 0.5rem 0; }
+  .encabezado .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .encabezado .container .logo img {
+      width: 170px;
+      height: auto;
+      margin-right: 3.5rem; }
+    .encabezado .container .btn-menu {
+      border: 0;
+      font-size: 2rem;
+      margin: 0;
+      padding: 0 0.5rem;
+      background: transparent;
+      color: #fff; }
+      .encabezado .container .btn-menu:focus {
+        outline: 0; }
+    .encabezado .container #menu-principal {
+      flex: 1 1 100%; }
+      .encabezado .container #menu-principal ul {
+        padding: 0;
+        list-style: none;
+        margin: 0.5rem 0 0 0; }
+        .encabezado .container #menu-principal ul li a {
+          display: block;
+          padding: 0.8rem 0;
+          text-align: center;
+          text-decoration: none;
+          color: #fff;
+          border-top: 1px solid #fff; }
+          .encabezado .container #menu-principal ul li a:hover {
+            color: #F44336;
+            background: #232323; }
+        .encabezado .container #menu-principal ul .active a {
+          color: #F44336; }

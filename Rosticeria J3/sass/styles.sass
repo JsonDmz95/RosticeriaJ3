@@ -1,0 +1,59 @@
+$colorNegro: #212121
+$colorGris:#757575
+$colorBlanco:#fff
+$colorPrimario:#F44336
+$colorSecundario:#BC4F3B
+$colorTerciario:#009688
+
+html
+    font-size: 15px
+
+
+body
+    font-family: 'Roboto', sans-serif
+    color: $colorNegro
+
+.encabezado
+    background: $colorNegro
+    color: $colorBlanco
+    padding: .5rem 0
+    .container
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
+        .logo
+            img
+                width: 170px
+                height: auto
+                margin-right: 3.5rem
+        .btn-menu
+            border: 0
+            font-size: 2rem
+            margin: 0
+            padding: 0 0.5rem
+            background: transparent
+            color: $colorBlanco
+            &:focus
+                outline: 0
+
+        #menu-principal
+            flex: 1 1 100%
+            ul
+                padding: 0
+                list-style: none
+                margin: 0.5rem 0 0 0
+                li
+                    a
+                        display: block
+                        padding: 0.8rem 0
+                        text-align: center
+                        text-decoration: none
+                        color: $colorBlanco
+                        border-top: 1px solid $colorBlanco
+                        &:hover
+                            color: $colorPrimario
+                            background: #232323
+                .active
+                    a
+                        color: $colorPrimario
