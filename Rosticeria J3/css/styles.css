@@ -172,3 +172,52 @@ body {
             color: #F44336;
             left: -0.5rem;
             transition: all 0.5s ease; }
+
+/*------------------- */
+/*Section SABER */
+/*------------------- */
+.galeria {
+  padding: 1rem 0; }
+  .galeria p {
+    color: #757575; }
+  .galeria .container {
+    padding-left: 0;
+    padding-right: 0; }
+    .galeria .container img {
+      width: 100%; }
+  .galeria .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0; }
+    .galeria .owl-nav .owl-prev, .galeria .owl-nav .owl-next {
+      color: #f76a5f;
+      font-size: 3rem;
+      margin: 0 1rem;
+      transition: all 0.5s ease; }
+      .galeria .owl-nav .owl-prev:hover, .galeria .owl-nav .owl-next:hover {
+        color: #F44336; }
+
+/*------------------- */
+/*FOOTER */
+/*------------------- */
+footer {
+  background: #3b3b3b;
+  color: #fff;
+  text-align: center; }
+  footer .redes {
+    padding: 0.7rem; }
+    footer .redes p {
+      background: #4E4C4C;
+      text-align: center;
+      font-size: 1.5rem; }
+      footer .redes p a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        transition: all 0.5s ease; }
+      footer .redes p .fb:hover {
+        color: #3B5998; }
+      footer .redes p .tw:hover {
+        color: #1DA1F2; }
+      footer .redes p .ig:hover {
+        color: #AD2C90; }
