@@ -144,3 +144,44 @@ body
             h4
                 font-size: 1rem
                 margin-top: 0.8rem
+
+/*-------------------*/
+/*Section SABER*/
+/*-------------------*/
+.saber
+    background: url("../images/fondosaber.jpg") no-repeat center center
+    background-size: cover
+    padding: 1.5rem 0
+    color: $colorBlanco
+    article
+        display: flex
+        align-items: center
+        margin: 1rem 0
+        img
+            flex: 0 0 60px
+            overflow: hidden
+            margin-right: 1rem
+        h3
+            flex: 1 1 0px
+            margin: 0
+            font-size: 1.25rem
+            font-weight: normal
+            a
+                color: $colorBlanco
+                text-decoration: none
+                display: flex
+                justify-content: space-between
+                &::after
+                    content: "\f054"
+                    font-family: FontAwesome
+                    font-size: 1.7rem
+                    align-items: center
+                    margin-left: 1rem
+                    position: relative
+                    left: 0
+                &:hover
+                    text-decoration: none
+                    &::after
+                        color: $colorPrimario
+                        left: -.5rem
+                        transition: all .5s ease

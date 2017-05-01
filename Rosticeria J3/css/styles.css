@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 15px; }
 
@@ -130,3 +131,44 @@ body {
       .porque ul li h4 {
         font-size: 1rem;
         margin-top: 0.8rem; }
+
+/*------------------- */
+/*Section SABER */
+/*------------------- */
+.saber {
+  background: url("../images/fondosaber.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 1.5rem 0;
+  color: #fff; }
+  .saber article {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0; }
+    .saber article img {
+      flex: 0 0 60px;
+      overflow: hidden;
+      margin-right: 1rem; }
+    .saber article h3 {
+      flex: 1 1 0px;
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: normal; }
+      .saber article h3 a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between; }
+        .saber article h3 a::after {
+          content: "";
+          font-family: FontAwesome;
+          font-size: 1.7rem;
+          align-items: center;
+          margin-left: 1rem;
+          position: relative;
+          left: 0; }
+        .saber article h3 a:hover {
+          text-decoration: none; }
+          .saber article h3 a:hover::after {
+            color: #F44336;
+            left: -0.5rem;
+            transition: all 0.5s ease; }
