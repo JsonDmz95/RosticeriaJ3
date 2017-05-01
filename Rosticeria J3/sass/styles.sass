@@ -8,11 +8,23 @@ $colorTerciario:#009688
 html
     font-size: 15px
 
-
 body
     font-family: 'Roboto', sans-serif
     color: $colorNegro
-
+.bajar
+    a
+        display: inline-block
+        color: $colorBlanco
+        text-decoration: none
+        font-size: 3.5rem
+        animation: animacionBajar 1.7s ease-in-out infinite
+.bienvenidos
+    background: url("../images/fondoEncabezado.jpg") no-repeat center top
+    color: $colorBlanco
+    background-size: cover
+    height: 100vh
+    display: flex
+    flex-direction: column
 .encabezado
     background: $colorNegro
     color: $colorBlanco
@@ -24,9 +36,10 @@ body
         justify-content: space-between
         .logo
             img
-                width: 170px
+                width: 160px
                 height: auto
-                margin-right: 3.5rem
+                //margin-right: 5rem
+                flex-grow: 1
         .btn-menu
             border: 0
             font-size: 2rem
@@ -34,7 +47,7 @@ body
             padding: 0 0.5rem
             background: transparent
             color: $colorBlanco
-            margin-left: auto
+            margin-left: 5rem
             &:focus
                 outline: 0
 
@@ -58,7 +71,21 @@ body
                 .active
                     a
                         color: $colorPrimario
+
+@keyframes animacionBajar
+    from
+        transform: translateY(0)
+    50%
+        transform: translateY(6px)
+    to
+        transform: translateY(0)
+
 .texto-encabezado
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
     .display-4
         margin-top: 4rem
     .btn-primary
@@ -74,3 +101,17 @@ body
             color: $colorBlanco
             background-color: $colorPrimario
             border-color: transparent
+
+
+/*-------------------*/
+/*Section RESTAURANTE*/
+/*-------------------*/
+.restaurante
+    background: $colorPrimario
+    color: $colorBlanco
+    padding: 1.5rem 0
+    p
+        margin-top: 1.5rem
+    img
+        width: 85%
+        margin-top: 1.5rem

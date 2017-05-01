@@ -5,6 +5,21 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121; }
 
+.bajar a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 3.5rem;
+  animation: animacionBajar 1.7s ease-in-out infinite; }
+
+.bienvenidos {
+  background: url("../images/fondoEncabezado.jpg") no-repeat center top;
+  color: #fff;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
 .encabezado {
   background: #212121;
   color: #fff;
@@ -15,9 +30,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between; }
     .encabezado .container .logo img {
-      width: 170px;
+      width: 160px;
       height: auto;
-      margin-right: 3.5rem; }
+      flex-grow: 1; }
     .encabezado .container .btn-menu {
       border: 0;
       font-size: 2rem;
@@ -25,7 +40,7 @@ body {
       padding: 0 0.5rem;
       background: transparent;
       color: #fff;
-      margin-left: auto; }
+      margin-left: 5rem; }
       .encabezado .container .btn-menu:focus {
         outline: 0; }
     .encabezado .container #menu-principal {
@@ -47,18 +62,44 @@ body {
         .encabezado .container #menu-principal ul .active a {
           color: #F44336; }
 
-.texto-encabezado .display-4 {
-  margin-top: 4rem; }
-.texto-encabezado .btn-primary {
-  background-color: #f45c50;
-  border-color: transparent;
-  margin-top: 1rem;
-  transition: all 0.5s ease; }
-  .texto-encabezado .btn-primary:focus {
-    color: #fff;
-    background-color: #F44336;
-    border-color: transparent; }
-  .texto-encabezado .btn-primary:hover {
-    color: #fff;
-    background-color: #F44336;
-    border-color: transparent; }
+@keyframes animacionBajar {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(6px); }
+  to {
+    transform: translateY(0); } }
+.texto-encabezado {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .texto-encabezado .display-4 {
+    margin-top: 4rem; }
+  .texto-encabezado .btn-primary {
+    background-color: #f45c50;
+    border-color: transparent;
+    margin-top: 1rem;
+    transition: all 0.5s ease; }
+    .texto-encabezado .btn-primary:focus {
+      color: #fff;
+      background-color: #F44336;
+      border-color: transparent; }
+    .texto-encabezado .btn-primary:hover {
+      color: #fff;
+      background-color: #F44336;
+      border-color: transparent; }
+
+/*------------------- */
+/*Section RESTAURANTE */
+/*------------------- */
+.restaurante {
+  background: #F44336;
+  color: #fff;
+  padding: 1.5rem 0; }
+  .restaurante p {
+    margin-top: 1.5rem; }
+  .restaurante img {
+    width: 85%;
+    margin-top: 1.5rem; }
