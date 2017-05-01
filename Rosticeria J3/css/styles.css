@@ -103,3 +103,30 @@ body {
   .restaurante img {
     width: 85%;
     margin-top: 1.5rem; }
+
+/*------------------- */
+/*Section PORQUE */
+/*------------------- */
+.porque {
+  padding: 1.5rem 0; }
+  .porque h2 span {
+    color: #F44336; }
+  .porque h4 {
+    color: #757575; }
+  .porque p {
+    color: #757575; }
+  .porque ul {
+    list-style: none; }
+    .porque ul li {
+      min-height: 10rem; }
+      .porque ul li .fa {
+        color: #fff;
+        background: #BC4F3B;
+        font-size: 2.5rem;
+        border-radius: 50%;
+        width: 4.7rem;
+        height: 4.7rem;
+        line-height: 4.7rem; }
+      .porque ul li h4 {
+        font-size: 1rem;
+        margin-top: 0.8rem; }
