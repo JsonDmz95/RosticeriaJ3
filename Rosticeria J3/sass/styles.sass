@@ -68,8 +68,8 @@ body
                         &:hover
                             color: $colorPrimario
                             background: #232323
-                .active
-                    a
+                    .active
+
                         color: $colorPrimario
 
 @keyframes animacionBajar
@@ -217,13 +217,16 @@ footer
     background: #3b3b3b
     color: $colorBlanco
     text-align: center
+    p
+        margin-bottom: 0
     .redes
         padding: 0.7rem
         p
             background: #4E4C4C
             text-align: center
-            font-size: 1.5rem
+
             a
+                font-size: 1.5rem
                 color: $colorBlanco
                 text-decoration: none
                 margin-left: 1.5rem
@@ -234,3 +237,98 @@ footer
                 color: #1DA1F2
             .ig:hover
                 color: #AD2C90
+
+/*-------------------*/
+/*FLECHA SUBIR*/
+/*-------------------*/
+.irArriba
+    position: fixed
+    bottom: 1rem
+    right: 1rem
+    font-size: 3rem
+    color: $colorGris
+    text-decoration: none
+    z-index: 999
+    line-height: 0
+    transition: all .5s ease
+    &:hover,&:focus
+        text-decoration: none
+        color: $colorNegro
+
+
+//=================================
+//--------PARA 768 MD
+//=================================
+
+@media (min-width:768px)
+    .saber
+        article
+            flex-direction: column
+            align-items: center
+            text-align: center
+            &:hover
+                img
+                    transition: all 1s ease-out
+                    transform: rotateY(360deg)
+                    transform-style: preserve-3D
+            img
+                flex: 0 0 140px
+                margin-bottom: 1.3rem
+            h3
+                a
+                    margin-bottom: 1.5rem
+                    &::after
+                        display: none
+//=================================
+//--------PARA 992 LG
+//=================================
+@media (min-width:992px)
+    .logo
+        img
+            width: 190px !important
+    #menu-principal
+        height: auto !important
+        display: block
+        flex: 0 1 auto !important
+        ul
+            display: flex
+            margin: 0
+            li
+                padding: 0.8rem !important
+                transition: all .5s ease
+                
+                a
+                    margin: 0 .3rem
+                    border-top: 0px !important
+                    padding: 0.8rem 0.8rem !important
+                    transition: all .5s ease
+                    &:hover
+                        border-bottom: 3px solid $colorPrimario
+            .active
+                border-bottom: 3px solid $colorPrimario
+    .porque
+        ul
+            flex: 1 0 0px
+            li
+                display: flex
+                &:hover
+                    .fa
+                        transform: rotateY(360deg)
+                        transform-style: preserve-3D
+                        background: $colorPrimario
+                .fa
+                    text-align: center
+                    width: 4.7rem !important
+                    height: 4.7rem !important
+                    line-height: 4.7rem !important
+                    margin: 1rem
+                    transition: all 1s ease
+
+        .izquierda
+            li
+                h4
+                    order: -1
+        .row
+            div
+                display: flex
+                align-items: center
